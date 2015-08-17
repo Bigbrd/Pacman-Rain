@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30E4B5219DA0DD500279007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30E4B5119DA0DD500279007 /* Foundation.framework */; };
+		C30E4B5419DA0DD500279007 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30E4B5319DA0DD500279007 /* CoreGraphics.framework */; };
+		C30E4B5619DA0DD500279007 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30E4B5519DA0DD500279007 /* UIKit.framework */; };
+		C30E4B5C19DA0DD500279007 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B5A19DA0DD500279007 /* InfoPlist.strings */; };
+		C30E4B5E19DA0DD500279007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C30E4B5D19DA0DD500279007 /* main.m */; };
+		C30E4B6219DA0DD500279007 /* BRDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C30E4B6119DA0DD500279007 /* BRDAppDelegate.m */; };
+		C30E4B6519DA0DD500279007 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B6319DA0DD500279007 /* Main.storyboard */; };
+		C30E4B6819DA0DD500279007 /* BRDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C30E4B6719DA0DD500279007 /* BRDViewController.m */; };
+		C30E4B6A19DA0DD500279007 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B6919DA0DD500279007 /* Images.xcassets */; };
+		C30E4B7119DA0DD600279007 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30E4B7019DA0DD600279007 /* XCTest.framework */; };
+		C30E4B7219DA0DD600279007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30E4B5119DA0DD500279007 /* Foundation.framework */; };
+		C30E4B7319DA0DD600279007 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30E4B5519DA0DD500279007 /* UIKit.framework */; };
+		C30E4B7B19DA0DD600279007 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B7919DA0DD600279007 /* InfoPlist.strings */; };
+		C30E4B7D19DA0DD600279007 /* Pacman_Dash_GameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C30E4B7C19DA0DD600279007 /* Pacman_Dash_GameTests.m */; };
+		C30E4B8D19DA0FB300279007 /* pacman_0.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B8719DA0FB300279007 /* pacman_0.png */; };
+		C30E4B8E19DA0FB300279007 /* pacman_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B8819DA0FB300279007 /* pacman_1.png */; };
+		C30E4B8F19DA0FB300279007 /* pacman_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B8919DA0FB300279007 /* pacman_2.png */; };
+		C30E4B9019DA0FB300279007 /* pacman_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B8A19DA0FB300279007 /* pacman_3.png */; };
+		C30E4B9119DA0FB300279007 /* pacman_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B8B19DA0FB300279007 /* pacman_background.png */; };
+		C30E4B9219DA0FB300279007 /* pacman_gameover.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B8C19DA0FB300279007 /* pacman_gameover.png */; };
+		C30E4B9819DA12AA00279007 /* fruit_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B9319DA12AA00279007 /* fruit_1.png */; };
+		C30E4B9919DA12AA00279007 /* fruit_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B9419DA12AA00279007 /* fruit_2.png */; };
+		C30E4B9A19DA12AA00279007 /* fruit_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B9519DA12AA00279007 /* fruit_3.png */; };
+		C30E4B9B19DA12AA00279007 /* fruit_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B9619DA12AA00279007 /* fruit_4.png */; };
+		C30E4B9C19DA12AA00279007 /* fruit_5.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B9719DA12AA00279007 /* fruit_5.png */; };
+		C30E4BA119DA142700279007 /* ghost_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B9D19DA142700279007 /* ghost_1.png */; };
+		C30E4BA319DA142700279007 /* ghost_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C30E4B9F19DA142700279007 /* ghost_3.png */; };
+		C30E4BA419DA142700279007 /* ghost_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C30E4BA019DA142700279007 /* ghost_4.jpg */; };
+		C3184F1019DB84130003D2A4 /* ghost_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C3184F0F19DB84130003D2A4 /* ghost_2.png */; };
+		C33AC18419E78B6300092013 /* fruit_explosion_4.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AC17F19E78B6200092013 /* fruit_explosion_4.png */; };
+		C33AC18519E78B6300092013 /* fruit_explosion_5.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AC18019E78B6300092013 /* fruit_explosion_5.png */; };
+		C33AC18619E78B6300092013 /* fruit_explosion_2.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AC18119E78B6300092013 /* fruit_explosion_2.png */; };
+		C33AC18719E78B6300092013 /* fruit_explosion_1.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AC18219E78B6300092013 /* fruit_explosion_1.png */; };
+		C33AC18819E78B6300092013 /* fruit_explosion_3.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AC18319E78B6300092013 /* fruit_explosion_3.png */; };
+		C33AC18A19E7A66000092013 /* mspacman.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AC18919E7A66000092013 /* mspacman.png */; };
+		C33AC18E19E7AA2000092013 /* baby_pacman.png in Resources */ = {isa = PBXBuildFile; fileRef = C33AC18D19E7AA2000092013 /* baby_pacman.png */; };
+		C3DD2CA919DDD8E2004D260C /* appIcon_pacmanrain.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DD2CA819DDD8E2004D260C /* appIcon_pacmanrain.png */; };
+		C3DD2CAB19DDD8EB004D260C /* pacman_splash2048land.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DD2CAA19DDD8EB004D260C /* pacman_splash2048land.png */; };
+		C3DD2CAD19DF2D26004D260C /* techmenu_background.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DD2CAC19DF2D26004D260C /* techmenu_background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30E4B7419DA0DD600279007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30E4B4619DA0DD500279007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30E4B4D19DA0DD500279007;
+			remoteInfo = "Pacman Rain Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C30E4B4E19DA0DD500279007 /* Pacman Dash Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pacman Dash Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30E4B5119DA0DD500279007 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C30E4B5319DA0DD500279007 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C30E4B5519DA0DD500279007 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C30E4B5919DA0DD500279007 /* Pacman Dash Game-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pacman Dash Game-Info.plist"; sourceTree = "<group>"; };
+		C30E4B5B19DA0DD500279007 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C30E4B5D19DA0DD500279007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C30E4B5F19DA0DD500279007 /* Pacman Dash Game-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pacman Dash Game-Prefix.pch"; sourceTree = "<group>"; };
+		C30E4B6019DA0DD500279007 /* BRDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDAppDelegate.h; sourceTree = "<group>"; };
+		C30E4B6119DA0DD500279007 /* BRDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRDAppDelegate.m; sourceTree = "<group>"; };
+		C30E4B6419DA0DD500279007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C30E4B6619DA0DD500279007 /* BRDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRDViewController.h; sourceTree = "<group>"; };
+		C30E4B6719DA0DD500279007 /* BRDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRDViewController.m; sourceTree = "<group>"; };
+		C30E4B6919DA0DD500279007 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C30E4B6F19DA0DD600279007 /* Pacman Dash GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pacman Dash GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30E4B7019DA0DD600279007 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C30E4B7819DA0DD600279007 /* Pacman Dash GameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pacman Dash GameTests-Info.plist"; sourceTree = "<group>"; };
+		C30E4B7A19DA0DD600279007 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C30E4B7C19DA0DD600279007 /* Pacman_Dash_GameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pacman_Dash_GameTests.m; sourceTree = "<group>"; };
+		C30E4B8719DA0FB300279007 /* pacman_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman_0.png; sourceTree = "<group>"; };
+		C30E4B8819DA0FB300279007 /* pacman_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman_1.png; sourceTree = "<group>"; };
+		C30E4B8919DA0FB300279007 /* pacman_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman_2.png; sourceTree = "<group>"; };
+		C30E4B8A19DA0FB300279007 /* pacman_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman_3.png; sourceTree = "<group>"; };
+		C30E4B8B19DA0FB300279007 /* pacman_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman_background.png; sourceTree = "<group>"; };
+		C30E4B8C19DA0FB300279007 /* pacman_gameover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman_gameover.png; sourceTree = "<group>"; };
+		C30E4B9319DA12AA00279007 /* fruit_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_1.png; sourceTree = "<group>"; };
+		C30E4B9419DA12AA00279007 /* fruit_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_2.png; sourceTree = "<group>"; };
+		C30E4B9519DA12AA00279007 /* fruit_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_3.png; sourceTree = "<group>"; };
+		C30E4B9619DA12AA00279007 /* fruit_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_4.png; sourceTree = "<group>"; };
+		C30E4B9719DA12AA00279007 /* fruit_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_5.png; sourceTree = "<group>"; };
+		C30E4B9D19DA142700279007 /* ghost_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_1.png; sourceTree = "<group>"; };
+		C30E4B9F19DA142700279007 /* ghost_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_3.png; sourceTree = "<group>"; };
+		C30E4BA019DA142700279007 /* ghost_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ghost_4.jpg; sourceTree = "<group>"; };
+		C3184F0F19DB84130003D2A4 /* ghost_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost_2.png; sourceTree = "<group>"; };
+		C33AC17F19E78B6200092013 /* fruit_explosion_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_explosion_4.png; sourceTree = "<group>"; };
+		C33AC18019E78B6300092013 /* fruit_explosion_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_explosion_5.png; sourceTree = "<group>"; };
+		C33AC18119E78B6300092013 /* fruit_explosion_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_explosion_2.png; sourceTree = "<group>"; };
+		C33AC18219E78B6300092013 /* fruit_explosion_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_explosion_1.png; sourceTree = "<group>"; };
+		C33AC18319E78B6300092013 /* fruit_explosion_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fruit_explosion_3.png; sourceTree = "<group>"; };
+		C33AC18919E7A66000092013 /* mspacman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mspacman.png; sourceTree = "<group>"; };
+		C33AC18D19E7AA2000092013 /* baby_pacman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baby_pacman.png; sourceTree = "<group>"; };
+		C3DD2CA819DDD8E2004D260C /* appIcon_pacmanrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appIcon_pacmanrain.png; sourceTree = "<group>"; };
+		C3DD2CAA19DDD8EB004D260C /* pacman_splash2048land.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman_splash2048land.png; sourceTree = "<group>"; };
+		C3DD2CAC19DF2D26004D260C /* techmenu_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = techmenu_background.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30E4B4B19DA0DD500279007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30E4B5419DA0DD500279007 /* CoreGraphics.framework in Frameworks */,
+				C30E4B5619DA0DD500279007 /* UIKit.framework in Frameworks */,
+				C30E4B5219DA0DD500279007 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30E4B6C19DA0DD600279007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30E4B7119DA0DD600279007 /* XCTest.framework in Frameworks */,
+				C30E4B7319DA0DD600279007 /* UIKit.framework in Frameworks */,
+				C30E4B7219DA0DD600279007 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30E4B4519DA0DD500279007 = {
+			isa = PBXGroup;
+			children = (
+				C30E4B5719DA0DD500279007 /* Pacman Dash Game */,
+				C30E4B7619DA0DD600279007 /* Pacman Dash GameTests */,
+				C30E4B5019DA0DD500279007 /* Frameworks */,
+				C30E4B4F19DA0DD500279007 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C30E4B4F19DA0DD500279007 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30E4B4E19DA0DD500279007 /* Pacman Dash Game.app */,
+				C30E4B6F19DA0DD600279007 /* Pacman Dash GameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C30E4B5019DA0DD500279007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C30E4B5119DA0DD500279007 /* Foundation.framework */,
+				C30E4B5319DA0DD500279007 /* CoreGraphics.framework */,
+				C30E4B5519DA0DD500279007 /* UIKit.framework */,
+				C30E4B7019DA0DD600279007 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C30E4B5719DA0DD500279007 /* Pacman Dash Game */ = {
+			isa = PBXGroup;
+			children = (
+				C30E4B6319DA0DD500279007 /* Main.storyboard */,
+				C30E4B6619DA0DD500279007 /* BRDViewController.h */,
+				C30E4B6719DA0DD500279007 /* BRDViewController.m */,
+				C30E4B5819DA0DD500279007 /* Supporting Files */,
+			);
+			name = "Pacman Dash Game";
+			path = "Pacman Rain Game";
+			sourceTree = "<group>";
+		};
+		C30E4B5819DA0DD500279007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C30E4B8619DA0DF000279007 /* Pacman Images */,
+				C30E4B6119DA0DD500279007 /* BRDAppDelegate.m */,
+				C30E4B6019DA0DD500279007 /* BRDAppDelegate.h */,
+				C30E4B6919DA0DD500279007 /* Images.xcassets */,
+				C30E4B5919DA0DD500279007 /* Pacman Dash Game-Info.plist */,
+				C30E4B5A19DA0DD500279007 /* InfoPlist.strings */,
+				C30E4B5D19DA0DD500279007 /* main.m */,
+				C30E4B5F19DA0DD500279007 /* Pacman Dash Game-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C30E4B7619DA0DD600279007 /* Pacman Dash GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				C30E4B7C19DA0DD600279007 /* Pacman_Dash_GameTests.m */,
+				C30E4B7719DA0DD600279007 /* Supporting Files */,
+			);
+			name = "Pacman Dash GameTests";
+			path = "Pacman Rain GameTests";
+			sourceTree = "<group>";
+		};
+		C30E4B7719DA0DD600279007 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C30E4B7819DA0DD600279007 /* Pacman Dash GameTests-Info.plist */,
+				C30E4B7919DA0DD600279007 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C30E4B8619DA0DF000279007 /* Pacman Images */ = {
+			isa = PBXGroup;
+			children = (
+				C33AC18D19E7AA2000092013 /* baby_pacman.png */,
+				C33AC18919E7A66000092013 /* mspacman.png */,
+				C33AC18219E78B6300092013 /* fruit_explosion_1.png */,
+				C33AC18119E78B6300092013 /* fruit_explosion_2.png */,
+				C33AC18319E78B6300092013 /* fruit_explosion_3.png */,
+				C33AC17F19E78B6200092013 /* fruit_explosion_4.png */,
+				C33AC18019E78B6300092013 /* fruit_explosion_5.png */,
+				C3DD2CAC19DF2D26004D260C /* techmenu_background.png */,
+				C3DD2CAA19DDD8EB004D260C /* pacman_splash2048land.png */,
+				C3DD2CA819DDD8E2004D260C /* appIcon_pacmanrain.png */,
+				C30E4B9319DA12AA00279007 /* fruit_1.png */,
+				C30E4B9419DA12AA00279007 /* fruit_2.png */,
+				C30E4B9519DA12AA00279007 /* fruit_3.png */,
+				C30E4B9619DA12AA00279007 /* fruit_4.png */,
+				C30E4B9719DA12AA00279007 /* fruit_5.png */,
+				C30E4B8719DA0FB300279007 /* pacman_0.png */,
+				C30E4B8819DA0FB300279007 /* pacman_1.png */,
+				C30E4B8919DA0FB300279007 /* pacman_2.png */,
+				C30E4B8A19DA0FB300279007 /* pacman_3.png */,
+				C30E4B9D19DA142700279007 /* ghost_1.png */,
+				C3184F0F19DB84130003D2A4 /* ghost_2.png */,
+				C30E4B9F19DA142700279007 /* ghost_3.png */,
+				C30E4BA019DA142700279007 /* ghost_4.jpg */,
+				C30E4B8B19DA0FB300279007 /* pacman_background.png */,
+				C30E4B8C19DA0FB300279007 /* pacman_gameover.png */,
+			);
+			name = "Pacman Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30E4B4D19DA0DD500279007 /* Pacman Dash Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30E4B8019DA0DD600279007 /* Build configuration list for PBXNativeTarget "Pacman Dash Game" */;
+			buildPhases = (
+				C30E4B4A19DA0DD500279007 /* Sources */,
+				C30E4B4B19DA0DD500279007 /* Frameworks */,
+				C30E4B4C19DA0DD500279007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pacman Dash Game";
+			productName = "Pacman Rain Game";
+			productReference = C30E4B4E19DA0DD500279007 /* Pacman Dash Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30E4B6E19DA0DD600279007 /* Pacman Dash GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30E4B8319DA0DD600279007 /* Build configuration list for PBXNativeTarget "Pacman Dash GameTests" */;
+			buildPhases = (
+				C30E4B6B19DA0DD600279007 /* Sources */,
+				C30E4B6C19DA0DD600279007 /* Frameworks */,
+				C30E4B6D19DA0DD600279007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30E4B7519DA0DD600279007 /* PBXTargetDependency */,
+			);
+			name = "Pacman Dash GameTests";
+			productName = "Pacman Rain GameTests";
+			productReference = C30E4B6F19DA0DD600279007 /* Pacman Dash GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30E4B4619DA0DD500279007 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BRD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bryan Dickens";
+				TargetAttributes = {
+					C30E4B4D19DA0DD500279007 = {
+						DevelopmentTeam = L38GWSMVUV;
+					};
+					C30E4B6E19DA0DD600279007 = {
+						TestTargetID = C30E4B4D19DA0DD500279007;
+					};
+				};
+			};
+			buildConfigurationList = C30E4B4919DA0DD500279007 /* Build configuration list for PBXProject "Pacman Dash Game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C30E4B4519DA0DD500279007;
+			productRefGroup = C30E4B4F19DA0DD500279007 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30E4B4D19DA0DD500279007 /* Pacman Dash Game */,
+				C30E4B6E19DA0DD600279007 /* Pacman Dash GameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30E4B4C19DA0DD500279007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30E4B9B19DA12AA00279007 /* fruit_4.png in Resources */,
+				C30E4B9819DA12AA00279007 /* fruit_1.png in Resources */,
+				C30E4BA119DA142700279007 /* ghost_1.png in Resources */,
+				C30E4B9219DA0FB300279007 /* pacman_gameover.png in Resources */,
+				C30E4B9919DA12AA00279007 /* fruit_2.png in Resources */,
+				C30E4B9019DA0FB300279007 /* pacman_3.png in Resources */,
+				C30E4B8F19DA0FB300279007 /* pacman_2.png in Resources */,
+				C33AC18E19E7AA2000092013 /* baby_pacman.png in Resources */,
+				C30E4BA419DA142700279007 /* ghost_4.jpg in Resources */,
+				C3184F1019DB84130003D2A4 /* ghost_2.png in Resources */,
+				C3DD2CA919DDD8E2004D260C /* appIcon_pacmanrain.png in Resources */,
+				C30E4B9C19DA12AA00279007 /* fruit_5.png in Resources */,
+				C3DD2CAD19DF2D26004D260C /* techmenu_background.png in Resources */,
+				C30E4B8E19DA0FB300279007 /* pacman_1.png in Resources */,
+				C33AC18719E78B6300092013 /* fruit_explosion_1.png in Resources */,
+				C33AC18419E78B6300092013 /* fruit_explosion_4.png in Resources */,
+				C30E4B9A19DA12AA00279007 /* fruit_3.png in Resources */,
+				C30E4B6A19DA0DD500279007 /* Images.xcassets in Resources */,
+				C30E4B5C19DA0DD500279007 /* InfoPlist.strings in Resources */,
+				C33AC18519E78B6300092013 /* fruit_explosion_5.png in Resources */,
+				C3DD2CAB19DDD8EB004D260C /* pacman_splash2048land.png in Resources */,
+				C33AC18619E78B6300092013 /* fruit_explosion_2.png in Resources */,
+				C30E4B8D19DA0FB300279007 /* pacman_0.png in Resources */,
+				C30E4B6519DA0DD500279007 /* Main.storyboard in Resources */,
+				C30E4B9119DA0FB300279007 /* pacman_background.png in Resources */,
+				C33AC18819E78B6300092013 /* fruit_explosion_3.png in Resources */,
+				C30E4BA319DA142700279007 /* ghost_3.png in Resources */,
+				C33AC18A19E7A66000092013 /* mspacman.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30E4B6D19DA0DD600279007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30E4B7B19DA0DD600279007 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30E4B4A19DA0DD500279007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30E4B5E19DA0DD500279007 /* main.m in Sources */,
+				C30E4B6819DA0DD500279007 /* BRDViewController.m in Sources */,
+				C30E4B6219DA0DD500279007 /* BRDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30E4B6B19DA0DD600279007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30E4B7D19DA0DD600279007 /* Pacman_Dash_GameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30E4B7519DA0DD600279007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30E4B4D19DA0DD500279007 /* Pacman Dash Game */;
+			targetProxy = C30E4B7419DA0DD600279007 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C30E4B5A19DA0DD500279007 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30E4B5B19DA0DD500279007 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C30E4B6319DA0DD500279007 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30E4B6419DA0DD500279007 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C30E4B7919DA0DD600279007 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C30E4B7A19DA0DD600279007 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C30E4B7E19DA0DD600279007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C30E4B7F19DA0DD600279007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30E4B8119DA0DD600279007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman Rain Game/Pacman Dash Game-Prefix.pch";
+				INFOPLIST_FILE = "Pacman Rain Game/Pacman Dash Game-Info.plist";
+				PRODUCT_NAME = "Pacman Dash Game";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C30E4B8219DA0DD600279007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman Rain Game/Pacman Dash Game-Prefix.pch";
+				INFOPLIST_FILE = "Pacman Rain Game/Pacman Dash Game-Info.plist";
+				PRODUCT_NAME = "Pacman Dash Game";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C30E4B8419DA0DD600279007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pacman Rain Game.app/Pacman Rain Game";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman Rain Game/Pacman Rain Game-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pacman Rain GameTests/Pacman Dash GameTests-Info.plist";
+				PRODUCT_NAME = "Pacman Dash GameTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C30E4B8519DA0DD600279007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pacman Rain Game.app/Pacman Rain Game";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pacman Rain Game/Pacman Rain Game-Prefix.pch";
+				INFOPLIST_FILE = "Pacman Rain GameTests/Pacman Dash GameTests-Info.plist";
+				PRODUCT_NAME = "Pacman Dash GameTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30E4B4919DA0DD500279007 /* Build configuration list for PBXProject "Pacman Dash Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30E4B7E19DA0DD600279007 /* Debug */,
+				C30E4B7F19DA0DD600279007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30E4B8019DA0DD600279007 /* Build configuration list for PBXNativeTarget "Pacman Dash Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30E4B8119DA0DD600279007 /* Debug */,
+				C30E4B8219DA0DD600279007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30E4B8319DA0DD600279007 /* Build configuration list for PBXNativeTarget "Pacman Dash GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30E4B8419DA0DD600279007 /* Debug */,
+				C30E4B8519DA0DD600279007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30E4B4619DA0DD500279007 /* Project object */;
+}
